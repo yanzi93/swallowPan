@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎登陆Swallow网盘</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="js/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div id="login">
+		<div class="bg-back"></div>
+		<section class="login-wrapper wrapper">		
+			<div class="btn-tri-wrapper" id="toggle-register">
+				<div class="btn-tri">注 册</div>
+			</div>
+			<div class="info-plane">
+				<h1 class="info-title">欢迎登陆Swallow网盘</h1>
+				<form action="">
+				<div class="user-info">
+					<label for="user-name">
+						<input type="text" placeholder="手机/邮箱/用户名" id="user-name" class="info-name">
+					</label>
+					<label for="user-passwd">
+						<input type="password" placeholder="密码" id="user-passwd" class="info-passwd">
+					</label>
+				</div>
+				<div class="btn-grounp">
+					<input type="button" value="登陆" id="login-btn" class="btn">
+				</div>
+				</form>
+				<p class="tip-login tip" style="display: none; text-align: center; color: red">请输入正确用户名密码</p>
+			</div>
+		</section>
+
+		<section class="register-wrapper wrapper" style="display: none;">
+			<div class="btn-tri-wrapper" id="toggle-login">
+				<div class="btn-tri">登 陆</div>
+			</div>
+			<div class="info-plane">
+				<h1 class="info-title">欢迎注册Swallow网盘</h1>
+				<form action="">
+				<div class="user-info">
+					<label for="register-name">
+						<input type="text" placeholder="手机/邮箱/用户名" id="register-name" class="info-name">
+					</label>
+					<label for="register-passwd">
+						<input type="password" placeholder="密码" id="register-passwd" class="info-passwd">
+					</label>
+				</div>
+				<div class="btn-grounp">
+					<input type="button" value="注册" id="register-btn" class="btn">
+				</div>
+				</form>
+				<div class="desc">
+					<p>用户名: 以字母开头,7-16位包含数字字母</p>
+					<p>密码: 8-18位包含数字字母</p>
+				</div>
+				<p class="tip-register tip" style="display: none; text-align: center; color: red">请输入正确用户名密码</p>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="/js/login.js"></script>
+</html>
