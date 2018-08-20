@@ -1,0 +1,110 @@
+.plist {
+	padding-top: 1rem;
+	.am-list-item {
+		height: 1.65rem;
+		border-bottom: 1px solid #ddd;
+		padding: .2rem;
+	  .am-list-thumb:first-child {
+			width: 1.65rem;
+			height: 1.65rem;
+			img {
+				width: 100%;
+				height: 100%;
+				background: #eee url(../../style/img/loading.gif);
+				background-size: 100%;
+			}
+		}
+		.am-list-line  {
+			height: 1.7rem;
+			padding: 0;
+		}
+		.am-list-content {
+			position: relative;
+			height: 1.7rem;
+			font-size: .32rem;
+			white-space: normal;
+			overflow : hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			.am-list-brief {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				max-width: 60%;
+				overflow: hidden;
+				font-size: .26rem;
+				.icon {
+					font-size: .24rem;
+					padding-right: .1rem;
+				}
+			}
+		}
+		.am-list-line .am-list-arrow {
+			width: .5rem;
+			height: .5rem;
+		}
+	}
+  div.am-list-line.am-list-line-multiple{
+		&:after {
+			display: none !important;
+		}
+	}
+}
+
+.plist {
+	.list-wrapper {
+		.list-item {
+			height: 1.75rem;
+			border-bottom: 1px solid #ddd;
+			padding: .25rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.item-img-wrapper {
+				width: 1.75rem;
+				height: 1.75rem;
+				background: #ccc;
+				background-size: cover;
+				img {
+					float: left;
+					width: 1.75rem;
+					height: 1.75rem;
+				}
+			}
+			.arrow-wrapper {
+				width: .5rem;
+				height: .5rem;
+				img {
+					float: left;
+					width: .5rem;
+					height: .5rem;
+				}
+			}
+			.item-con-wrapper {
+				flex: 1;
+				height: 1.70rem;
+				padding: 0 .4rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				p {
+					font-size: .32rem;
+					white-space: normal;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+				}
+				span {
+					font-size: .30rem;
+					color: rgb(155,155,155);
+				}
+			}
+
+		}
+	}
+}
